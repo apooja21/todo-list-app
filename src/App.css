@@ -1,38 +1,127 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+	background: linear-gradient(
+		90deg,
+		rgba(157, 20, 225, 1) 0%,
+		rgba(118, 51, 234, 1) 49%,
+		rgba(36, 114, 252, 1) 92%
+	);
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.todo-app {
+	text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1 {
+	color: #fff;
+	margin-bottom: 0.5rem;
+	font-size: 1.75rem;
 }
 
-.App-link {
-  color: #61dafb;
+.todo-wrapper {
+	background: rgba(26, 26, 64, 0.8);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(3.5px);
+	margin-top: 5rem;
+	padding: 2rem;
+	border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-form {
+	width: 100%;
+}
+
+.todo-input {
+	outline: none;
+	background: transparent;
+	border: 1px solid #5d0cff;
+	color: #fff;
+	padding: 0.5rem 1rem;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+	width: 300px;
+	border-radius: 4px 0 0 4px;
+}
+
+.todo-input::placeholder {
+	color: #e2e2e2;
+}
+
+.todo-btn {
+	background: linear-gradient(
+		90deg,
+		rgba(93, 12, 255, 1) 0%,
+		rgba(155, 0, 250, 1) 100%
+	);
+	color: #fff;
+	border: none;
+	padding: 0.55rem;
+	cursor: pointer;
+	border-radius: 0 4px 4px 0;
+	outline: none;
+	text-transform: capitalize;
+}
+/* .btn-icon {
+	visibility: none;
+} */
+
+.todo-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #fff;
+	padding: 0.75rem 1rem;
+	border-radius: 4px;
+	margin-bottom: 1rem;
+	cursor: pointer;
+	background: linear-gradient(
+		90deg,
+		rgba(255, 118, 20, 1) 0%,
+		rgba(255, 84, 17, 1) 100%
+	);
+}
+
+.icons {
+	display: flex;
+	align-items: center;
+
+	cursor: pointer;
+}
+
+.edit-icon {
+	margin-right: 0.75rem;
+	color: #fff;
+}
+
+.delete-icon {
+	color: #fff;
+}
+
+@media only screen and (max-width: 440px) {
+	.todo-input {
+		width: 100%;
+		margin-bottom: 1rem;
+		border-radius: 4px;
+	}
+
+	.todo-btn {
+		width: 100%;
+		margin-bottom: 1rem;
+		border-radius: 4px;
+	}
+
+	.todo-wrapper {
+		margin: 3rem 1rem;
+	}
 }
