@@ -1,4 +1,4 @@
-#About Project
+# About Project
 
 This Todo List app is built using ReactJS. Currently, it is only frontend part of the app using the localstorage for the data.
 
