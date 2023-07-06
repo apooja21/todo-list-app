@@ -1,4 +1,9 @@
-# Getting Started with Create React App
+# About Project
+
+This Todo List app is built using ReactJS. Currently, it is only frontend part of the app using the localstorage for the data.
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
